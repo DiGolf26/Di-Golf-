@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: digolf26/Di-Golf
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "models"
+    label: "Putter Models"
+    folder: "models"
+    create: true
+    fields:
+      - { label: "Model Name", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Weight", name: "weight", widget: "string" }
+      - { label: "Loft", name: "loft", widget: "string" }
+      - { label: "Lie", name: "lie", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "body", widget: "markdown" }
