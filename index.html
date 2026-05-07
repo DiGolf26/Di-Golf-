@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DI Golf | Precision Milled Putters</title>
+  <title>DI Golf | Premium Milled Putters</title>
   <style>
     :root {
       --bg: #070707;
@@ -11,7 +11,7 @@
       --panel-2: #171717;
       --text: #f7f4ee;
       --muted: #b8b1a3;
-      --line: rgba(255,255,255,0.08);
+      --line: rgba(255,255,255,0.09);
       --accent: #d1a85c;
       --max: 1240px;
     }
@@ -27,7 +27,7 @@
     }
 
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; }
+    img { max-width: 100%; display: block; }
 
     .container {
       width: min(var(--max), calc(100% - 36px));
@@ -39,7 +39,7 @@
       top: 0;
       z-index: 50;
       backdrop-filter: blur(14px);
-      background: rgba(7,7,7,0.82);
+      background: rgba(7,7,7,0.88);
       border-bottom: 1px solid var(--line);
     }
 
@@ -47,162 +47,74 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 0;
+      padding: 16px 0;
+      gap: 20px;
     }
 
     .brand-wrap {
       display: flex;
       align-items: center;
       gap: 12px;
-    }
-
-    .brand-logo {
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      border: 1px solid rgba(209,168,92,0.4);
-      display: grid;
-      place-items: center;
-      color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      background: radial-gradient(circle at top, #1f1a14 0%, #100f0d 100%);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
       flex-shrink: 0;
     }
 
-    .brand {
-      font-size: 1.18rem;
-      font-weight: 700;
-</html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DI Golf | Precision Milled Putters</title>
-  <style>
-    :root {
-      --bg: #070707;
-      --panel: #111111;
-      --panel-2: #171717;
-      --text: #f7f4ee;
-      --muted: #b8b1a3;
-      --line: rgba(255,255,255,0.08);
-      --accent: #d1a85c;
-      --max: 1240px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0a0a0a 0%, #070707 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; }
-
-    .container {
-      width: min(var(--max), calc(100% - 36px));
-      margin: 0 auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(14px);
-      background: rgba(7,7,7,0.82);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0;
-    }
-
-    .brand-wrap {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
     .brand-logo {
-      width: 46px;
-      height: 46px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      border: 1px solid rgba(209,168,92,0.4);
-      display: grid;
-      place-items: center;
-      color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      background: radial-gradient(circle at top, #1f1a14 0%, #100f0d 100%);
+      object-fit: cover;
+      background: #fff;
+      border: 1px solid rgba(209,168,92,0.45);
       box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-      flex-shrink: 0;
     }
 
     .brand {
-      font-size: 1.18rem;
-      font-weight: 700;
+      font-size: 1.15rem;
+      font-weight: 800;
       letter-spacing: 0.22em;
       text-transform: uppercase;
+      white-space: nowrap;
     }
 
     .nav-links {
       display: flex;
-      gap: 24px;
+      gap: 20px;
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     .nav-links a:hover { color: var(--text); }
 
     .hero {
-      height: 92vh;
-      min-height: 760px;
-      background: url('IMG_0293.JPG') center center / cover no-repeat;
-      position: relative;
+      min-height: 88vh;
+      background: linear-gradient(90deg, rgba(0,0,0,0.84), rgba(0,0,0,0.35)), url('IMG_0301.JPG') center center / cover no-repeat;
       display: flex;
       align-items: center;
       border-bottom: 1px solid var(--line);
+      position: relative;
       overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 18% 22%, rgba(209,168,92,0.16), transparent 28%),
-                  radial-gradient(circle at 80% 18%, rgba(255,255,255,0.05), transparent 24%);
-      pointer-events: none;
     }
 
     .hero::after {
       content: "DI GOLF";
       position: absolute;
-      right: 40px;
-      bottom: 30px;
+      right: 36px;
+      bottom: 28px;
       font-size: clamp(3rem, 8vw, 7rem);
-      font-weight: 800;
+      font-weight: 900;
       letter-spacing: 0.22em;
-      color: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.045);
       pointer-events: none;
-      user-select: none;
       white-space: nowrap;
     }
 
     .hero-overlay {
       width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, rgba(0,0,0,0.84) 0%, rgba(0,0,0,0.48) 52%, rgba(0,0,0,0.18) 100%);
+      min-height: 88vh;
       display: flex;
       align-items: center;
       position: relative;
@@ -214,64 +126,68 @@
       padding: 0 60px;
     }
 
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
     .hero h1 {
-      font-size: clamp(3.4rem, 7vw, 6.3rem);
+      font-size: clamp(3rem, 7vw, 6rem);
       line-height: 0.95;
       margin: 0 0 18px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
-      max-width: 760px;
-      text-shadow: 0 8px 30px rgba(0,0,0,0.32);
+      color: var(--text);
+      text-shadow: 0 8px 30px rgba(0,0,0,0.35);
     }
 
     .hero p {
-      margin: 0 0 28px;
       color: #dfd7c8;
-      max-width: 620px;
+      max-width: 640px;
       font-size: 1.08rem;
+      margin: 0 0 28px;
     }
 
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 16px;
-      margin-top: 28px;
-      max-width: 620px;
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
-    .hero-stat {
-      background: rgba(13,13,13,0.72);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 16px 18px;
-      backdrop-filter: blur(10px);
-    }
-
-    .hero-stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.8rem;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 6px;
+      font-size: 0.82rem;
+      border: 1px solid rgba(209,168,92,0.85);
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
     }
 
-    .hero-stat strong {
-      font-size: 1rem;
-      color: var(--text);
-    }
+    .btn.primary { background: var(--accent); color: #111; }
+    .btn.secondary { color: var(--text); border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.04); }
+    .btn:hover { transform: translateY(-2px); }
 
     .section {
       padding: 82px 0;
       border-bottom: 1px solid var(--line);
-      scroll-margin-top: 90px;
+      scroll-margin-top: 88px;
     }
 
     .section-title {
       display: flex;
-      align-items: end;
       justify-content: space-between;
-      gap: 20px;
+      align-items: end;
+      gap: 24px;
       margin-bottom: 30px;
     }
 
@@ -285,16 +201,20 @@
     .section-title p {
       margin: 0;
       color: var(--muted);
-      max-width: 600px;
+      max-width: 620px;
     }
 
-    .product-overview, .ig-grid {
+    .product-overview,
+    .ig-grid,
+    .gold-gallery {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
     }
 
-    .product-card, .ig-card {
+    .product-card,
+    .ig-card,
+    .panel {
       background: linear-gradient(180deg, #141414 0%, #101010 100%);
       border: 1px solid var(--line);
       border-radius: 30px;
@@ -303,40 +223,49 @@
       transition: transform 0.22s ease, border-color 0.22s ease;
     }
 
-    .product-card:hover, .ig-card:hover {
+    .product-card:hover,
+    .ig-card:hover,
+    .panel:hover {
       transform: translateY(-4px);
-      border-color: rgba(209,168,92,0.35);
+      border-color: rgba(209,168,92,0.38);
     }
 
-    .product-card img, .ig-card img {
+    .product-card img,
+    .ig-card img {
       width: 100%;
-      display: block;
+      height: 320px;
       object-fit: cover;
     }
 
-    .product-card img { height: 320px; }
-    .ig-card img { height: 250px; }
+    .content { padding: 24px; }
 
-    .product-card .content, .ig-card .content {
-      padding: 24px;
-    }
-
-    .product-card h3, .ig-card strong {
+    .product-card h3,
+    .ig-card strong,
+    .panel h3 {
       margin: 0 0 8px;
       font-size: 1.5rem;
       text-transform: uppercase;
     }
 
-    .product-card p, .ig-card .note {
-      margin: 0 0 18px;
+    .product-card p,
+    .ig-card .note,
+    .panel p,
+    .note {
       color: var(--muted);
+    }
+
+    .price {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--accent);
+      margin: 0 0 16px;
     }
 
     .tag-row {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 18px;
+      margin: 18px 0;
     }
 
     .tag {
@@ -344,17 +273,10 @@
       color: #ddd5c8;
       padding: 7px 12px;
       border-radius: 999px;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      background: rgba(255,255,255,0.02);
-    }
-
-    .price {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin: 0 0 16px;
+      background: rgba(255,255,255,0.03);
     }
 
     .product-layout {
@@ -374,33 +296,7 @@
       border-radius: 24px;
       border: 1px solid var(--line);
       box-shadow: 0 18px 38px rgba(0,0,0,0.22);
-    }
-
-    .before-after {
-      position: relative;
-      overflow: hidden;
-      border-radius: 24px;
-    }
-
-    .ba-labels {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      right: 16px;
-      display: flex;
-      justify-content: space-between;
-      pointer-events: none;
-    }
-
-    .ba-label {
-      background: rgba(10,10,10,0.84);
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 0.76rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+      object-fit: cover;
     }
 
     .detail-panel {
@@ -419,18 +315,16 @@
       text-transform: uppercase;
     }
 
-    .detail-panel .sub {
+    .sub {
       color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.16em;
       font-size: 0.76rem;
       margin-bottom: 14px;
+      font-weight: 800;
     }
 
-    .detail-panel p {
-      color: var(--muted);
-      margin: 0 0 16px;
-    }
+    .detail-panel p { color: var(--muted); }
 
     .spec-box {
       background: #141414;
@@ -469,14 +363,77 @@
       margin-bottom: 6px;
     }
 
-    .spec strong {
-      font-size: 1rem;
-      color: var(--text);
+    .spec strong { color: var(--text); }
+
+    .before-after {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
     }
 
-    .note {
-      color: var(--muted);
-      font-size: 0.97rem;
+    .ba-labels {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .ba-label {
+      background: rgba(10,10,10,0.84);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.76rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .gold-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .gold-gallery img {
+      width: 100%;
+      max-width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      justify-self: center;
+    }
+
+    .gold-gallery img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 18px 34px rgba(0,0,0,0.32);
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .lightbox.show { display: flex; }
+
+    .lightbox img {
+      max-width: 92%;
+      max-height: 92%;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
     }
 
     .cta {
@@ -500,308 +457,88 @@
       letter-spacing: 0.06em;
     }
 
-    .cta p {
-      margin: 0;
-      color: var(--muted);
-      max-width: 680px;
-    }
+    .cta p { color: var(--muted); max-width: 680px; }
 
     footer {
-      padding: 30px 0 44px;
+      padding: 34px 0 44px;
       color: var(--muted);
       font-size: 0.95rem;
     }
 
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 24px;
+    }
+
+    .footer-title {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text);
+    }
+
+    .footer-links { display: grid; gap: 8px; }
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--text); }
+
     @media (max-width: 980px) {
+      .nav { align-items: flex-start; }
       .product-layout,
       .cta-box,
       .product-overview,
       .ig-grid,
-      .section-title {
+      .section-title,
+      .footer-grid {
         grid-template-columns: 1fr;
         display: grid;
       }
 
       .detail-panel { position: static; }
-      .hero {
-        min-height: 640px;
-        height: auto;
-      }
-      .hero-overlay {
-        min-height: 640px;
-        align-items: flex-end;
-      }
-      .hero-content {
-        padding: 42px 28px;
-      }
-      .hero-stats { grid-template-columns: 1fr; }
-      .hero::after { right: 18px; bottom: 18px; }
-    }
-
-      .detail-panel { position: static; }
-      .hero-card, .hero-card img { min-height: auto; height: auto; }
-      .hero-overlay { position: static; background: none; }
-      .hero-content { padding: 28px; }
-      .hero-stats { grid-template-columns: 1fr; }
-    }
-
-        .gold-gallery {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .gold-gallery img {
-      width: 100%;
-      border-radius: 20px;
-      border: 1px solid var(--line);
-      box-shadow: 0 14px 34px rgba(0,0,0,0.18);
-      object-fit: cover;
-      display: block;
-    }
-
-    .gold-plating-box {
-      margin-top: 28px;
-      background: linear-gradient(180deg, #141414 0%, #101010 100%);
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: 0 14px 34px rgba(0,0,0,0.22);
-    }
-
-    .gold-plating-box h3 {
-      margin: 0 0 10px;
-      text-transform: uppercase;
-      font-size: 1.6rem;
-    }
-
-    .gold-plating-box p {
-      color: var(--muted);
-      margin: 0 0 14px;
+      .hero { min-height: 650px; }
+      .hero-overlay { min-height: 650px; }
+      .hero-content { padding: 40px 28px; }
     }
 
     @media (max-width: 760px) {
       .nav { flex-direction: column; gap: 14px; }
-      .nav-links { flex-wrap: wrap; justify-content: center; }
+      .nav-links { justify-content: flex-start; gap: 14px; }
       .spec-grid { grid-template-columns: 1fr; }
       .section { padding: 62px 0; }
       .hero h1 { font-size: 2.8rem; }
       .product-card img, .ig-card img { height: auto; }
-      .gold-gallery { grid-template-columns: 1fr; }
+      .gold-gallery img { max-width: 100%; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a href="#top" class="brand-wrap"><span class="brand-logo">DG</span><span class="brand">DI Golf</span></a>
+      <a href="#top" class="brand-wrap">
+        <img src="di-golf-logo.jpg" alt="DI Golf logo" class="brand-logo" />
+        <span class="brand">DI Golf</span>
+      </a>
       <nav class="nav-links">
-        <a href="models.html">Models</a>
-        <a href="ball-markers.html">Ball Markers</a>
-        <a href="restoration.html">Restoration</a>
-        <a href="#college-discount">College Golf Discount</a>
-        <a href="contact.html">Contact</a>
+        <a href="#models">Models</a>
+        <a href="#ball-markers">Ball Markers</a>
+        <a href="#restoration">Restoration</a>
+        <a href="#gold-plating">Gold Plating</a>
+        <a href="#college-discount">College Discount</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    
     <section class="hero">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <div class="eyebrow">Built In Evansville • Precision Milled Putters</div>
-      <h1>PREMIUM PUTTERS.<br>BOUTIQUE CRAFTSMANSHIP.</h1>
-      <p>Built in Evansville. Precision milled. Custom finishes, restoration, and gold plating available.</p>
-
-      <div class="actions">
-        <a class="btn primary" href="#models">VIEW LINEUP</a>
-        <a class="btn secondary" href="#contact">START CUSTOM BUILD</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="hero-stat"><span>Built In</span><strong>Evansville, Indiana</strong></div>
-        <div class="hero-stat"><span>Material</span><strong>303 Stainless Steel</strong></div>
-        <div class="hero-stat"><span>Custom Options</span><strong>Finish, Grip, Length</strong></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section id="restoration" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Restoration</h2>
-          <p>DI Golf offers restoration services to help bring putters and clubs back to life. From refinishing and re-plating to cleanup, face restoration, and updated components, we can refresh the look and feel of a gamer or collector piece.</p>
-        </div>
-
-        <div class="gallery" style="margin-bottom:28px; max-width:800px;">
-          <div class="before-after">
-            <img src="IMG_0215.JPG" alt="Golf club restoration before and after" />
-            <div class="ba-labels">
-              <span class="ba-label">Before</span>
-              <span class="ba-label">After</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-overview">
-          <article class="product-card">
-            <div class="content">
-              <h3>Refinishing</h3>
-              <div class="price">Starting at $85</div>
-              <p>Clean up wear, restore appearance, and give your putter or wedge a fresh premium look.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>Re-Plating</h3>
-              <div class="price">Starting at $110</div>
-              <p>Available finish options can help revive the head and create a more custom final look.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>Re-Grip & Assembly</h3>
-              <div class="price">Starting at $35</div>
-              <p>Update grips, shaft setup, and final build details to match your preferred feel.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>Face Cleanup & Polish</h3>
-              <div class="price">Starting at $60</div>
-              <p>Restore face appearance, sharpen presentation, and refresh the look of heavily used clubs.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>Custom Requests</h3>
-              <p>Have a unique restoration idea or project? Reach out and we can talk through the options.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>The DI Golf Standard</h2>
-          <p>Every model in the lineup is designed, machined, plated, and finished in house. Clean shapes, premium materials, and custom options give each putter a true boutique build feel.</p>
-        </div>
-        <div class="product-overview">
-          <article class="product-card">
-            <div class="content">
-              <h3>Built In House</h3>
-              <p>From raw material to final assembly, DI Golf keeps the process in Evansville to control quality, feel, and finish.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>303 Stainless Steel</h3>
-              <p>Every featured model is built from premium 303 stainless steel for clean looks, durability, and performance.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>Custom Options</h3>
-              <p>Nickel and Gold plating, Swing Science shafts, custom grips, and any requested shaft length are available.</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="content">
-              <h3>Boutique Feel</h3>
-              <p>Small-batch craftsmanship and distinct face patterns give the lineup a premium, limited-run look.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="ball-markers" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Custom Ball Markers</h2>
-          <p>DI Golf also produces custom milled ball markers. Perfect for tournaments, brands, businesses, or personal use, each marker can feature custom logos, artwork, or QR codes. Like our putters, these markers are produced with attention to detail and premium finishing.</p>
-        </div>
-
-        <div class="product-layout">
-          <div class="gallery">
-            <img src="IMG_4770.jpeg" alt="DI Golf custom ball markers" />
-          </div>
-
-          <div class="detail-panel">
-            <div class="sub">Custom Shop</div>
-            <h3>Custom Ball Markers</h3>
-            <p>
-              Our custom ball markers are designed and finished with the same craftsmanship that goes into every DI Golf product. Whether you want a personal marker, club logo, tournament giveaway, or promotional design, we can help bring your idea to life.
-            </p>
-
-            <div class="spec-box">
-              <h4>Customization Options</h4>
-              <div class="spec-grid">
-                <div class="spec"><span>Logos</span><strong>Custom Artwork</strong></div>
-                <div class="spec"><span>Business Use</span><strong>Brand Promotion</strong></div>
-                <div class="spec"><span>Events</span><strong>Tournaments</strong></div>
-                <div class="spec"><span>Special Options</span><strong>QR Codes</strong></div>
-                <div class="spec"><span>Finish</span><strong>Nickel / Gold / Raw</strong></div>
-                <div class="spec"><span>Artwork</span><strong>Upload Your Logo</strong></div>
-              </div>
-            </div>
-                <div class="spec"><span>Business Use</span><strong>Brand Promotion</strong></div>
-                <div class="spec"><span>Events</span><strong>Tournaments</strong></div>
-                <div class="spec"><span>Special Options</span><strong>QR Codes</strong></div>
-              </div>
-            </div>
-
-            <div class="price">$5 Each • No Minimum Order</div>
-            <div class="spec-box">
-              <h4>Perfect For</h4>
-              <div class="spec-grid">
-                <div class="spec"><span>Events</span><strong>Golf Tournaments</strong></div>
-                <div class="spec"><span>Clubs</span><strong>Country Clubs</strong></div>
-                <div class="spec"><span>Corporate</span><strong>Company Giveaways</strong></div>
-                <div class="spec"><span>Teams</span><strong>College & High School Teams</strong></div>
-              </div>
-            </div>
-
-            <div class="spec-box">
-              <h4>Bulk Pricing</h4>
-              <h4>Bulk Pricing</h4>
-  <div class="spec-grid">
-    <div class="spec"><span>1–25 Markers</span><strong>$15 / pc</strong></div>
-    <div class="spec"><span>25–50 Markers</span><strong>$10 / pc</strong></div>
-    <div class="spec"><span>50+ Markers</span><strong>$7 / pc</strong></div>
-    <div class="spec"><span>100+ Markers</span><strong>$5 / pc</strong></div>
-  </div>
-            </div>
-                <div class="spec"><span>Clubs</span><strong>Country Clubs</strong></div>
-                <div class="spec"><span>Corporate</span><strong>Company Giveaways</strong></div>
-                <div class="spec"><span>Teams</span><strong>College & High School Teams</strong></div>
-              </div>
-            </div>
-            <p class="note">
-              Pricing depends on quantity, artwork, and finish. Contact DI Golf to start a custom ball marker order.
-            </p>
-
-</div>
-            <div class="spec-box">
-              <h4>Request Quote</h4>
-              <div class="spec-grid">
-                <div class="spec"><span>Step 1</span><strong>Choose Quantity</strong></div>
-                <div class="spec"><span>Step 2</span><strong>Select Finish</strong></div>
-                <div class="spec"><span>Step 3</span><strong>Upload Logo or Artwork</strong></div>
-                <div class="spec"><span>Step 4</span><strong>Email For Quote</strong></div>
-              </div>
-              <p class="note" style="margin-top:16px;">To request a quote, email DI Golf with your quantity, finish preference, and logo or artwork file. We can also help with tournament, business, and team orders.</p>
-            </div>
-
-            <div class="actions">
-              <a class="btn primary" href="mailto:jstocks@emiplating.com?subject=DI%20Golf%20Ball%20Marker%20Quote">Request Quote</a>
-              <a class="btn secondary" href="https://www.instagram.com/di.golf2024/" target="_blank" rel="noopener noreferrer">View Instagram</a>
-            </div>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <div class="eyebrow">Built In Evansville • Precision Milled Putters</div>
+          <h1>Premium Putters.<br>Boutique Craftsmanship.</h1>
+          <p>Precision milled putters, custom ball markers, restoration work, and gold plating built with premium detail.</p>
+          <div class="actions">
+            <a class="btn primary" href="#models">View Lineup</a>
+            <a class="btn secondary" href="#gold-plating">Gold Plating</a>
           </div>
         </div>
       </div>
@@ -811,7 +548,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Current Lineup</h2>
-          <p>Four premium milled heads built from 303 stainless steel, plated in house, and assembled with Swing Science shafts. Pricing shown below can be adjusted anytime.</p>
+          <p>Four premium milled heads built from 303 stainless steel, plated in house, and assembled with Swing Science shafts.</p>
         </div>
 
         <div class="product-overview">
@@ -889,17 +626,10 @@
           <img src="IMG_4344.jpeg" alt="Eagle putter face milling" />
           <img src="IMG_3430.jpeg" alt="Two Eagle putters" />
         </div>
-
         <div class="detail-panel">
           <div class="sub">Blade Style Putter</div>
           <h3>The Eagle</h3>
-          <p>
-            The Eagle is our blade style putter. This putter is made from scratch, engineered, machined, plated, and finished by our team of professionals. We have put countless hours into the design, feel, looks, and function of the Eagle.
-          </p>
-          <p>
-            Every head is built with a focus on clean visuals, premium feel, and performance you can trust.
-          </p>
-
+          <p>The Eagle is our blade style putter. This putter is made from scratch, engineered, machined, plated, and finished by our team of professionals.</p>
           <div class="spec-box">
             <h4>Specifications</h4>
             <div class="spec-grid">
@@ -909,14 +639,10 @@
               <div class="spec"><span>Material</span><strong>303 Stainless Steel</strong></div>
             </div>
           </div>
-
-          <p class="note">
-            All putters are plated in house with a variety of different options including Nickel and Gold. All putters are also mounted with a Swing Science shaft. Custom shaft lengths and grips are available upon request.
-          </p>
-
+          <p class="note">All putters are plated in house with Nickel and Gold options. All putters are mounted with a Swing Science shaft. Custom shaft lengths, grips, lie angle, and loft are available upon request.</p>
           <div class="actions">
             <a class="btn primary" href="#contact">Request Eagle</a>
-            <a class="btn secondary" href="#models">Back to Models</a>
+            <a class="btn secondary" href="#models">Back To Models</a>
           </div>
         </div>
       </div>
@@ -929,17 +655,10 @@
           <img src="IMG_3991.jpeg" alt="Mid-Mallet face view" />
           <img src="IMG_4305.jpeg" alt="Mid-Mallet on practice green" />
         </div>
-
         <div class="detail-panel">
           <div class="sub">Mid-Mallet Style Putter</div>
           <h3>The Mid-Mallet</h3>
-          <p>
-            The Mid Mallet is our step toward the mallet style putter. This putter was our second design to come to market. Same as the Eagle, our team is 100% involved in the production of this putter from start to finish using the same material.
-          </p>
-          <p>
-            From the design, to the machining, milling, plating, and mounting, our team is proud of how this putter came out.
-          </p>
-
+          <p>The Mid Mallet is our step toward the mallet style putter. It was our second design to come to market and is fully produced by our team from start to finish.</p>
           <div class="spec-box">
             <h4>Specifications</h4>
             <div class="spec-grid">
@@ -949,37 +668,27 @@
               <div class="spec"><span>Material</span><strong>303 Stainless Steel</strong></div>
             </div>
           </div>
-
-          <p class="note">
-            All putters are plated in house with a variety of different options including Nickel and Gold. All putters are also mounted with a Swing Science shaft. Custom shaft lengths and grips are available upon request.
-          </p>
-
+          <p class="note">All putters are plated in house with Nickel and Gold options and mounted with Swing Science shafts.</p>
           <div class="actions">
             <a class="btn primary" href="#contact">Request Mid-Mallet</a>
-            <a class="btn secondary" href="#models">Back to Models</a>
+            <a class="btn secondary" href="#models">Back To Models</a>
           </div>
         </div>
       </div>
     </section>
 
-        <section id="brickyard" class="section">
+    <section id="brickyard" class="section">
       <div class="container product-layout">
         <div class="gallery">
           <img src="IMG_5932.jpeg" alt="Brickyard face view" />
           <img src="IMG_5931.jpeg" alt="Brickyard gold plated back view" />
           <img src="IMG_5827.jpeg" alt="Brickyard putter on practice green" />
         </div>
-
         <div class="detail-panel">
           <div class="sub">Newest Model</div>
           <h3>The Brickyard</h3>
-          <p>
-            The Brickyard is our newest putter added to the lineup. Our goal remains the same as our other putters: provide a quality product that is handled in our shop in Evansville from the block of material until it is mounted and gripped.
-          </p>
-          <p>
-            From the design to the machining, plating, and mounting, we can guarantee that it all happens in Evansville. The Brickyard stands out with its unique brick face pattern. Check out the specs and see if this is the putter for you.
-          </p>
-
+          <p>The Brickyard is our newest putter added to the lineup. It is handled in our shop in Evansville from the block of material until it is mounted and gripped.</p>
+          <p>The Brickyard stands out with its unique brick face pattern.</p>
           <div class="spec-box">
             <h4>Specifications</h4>
             <div class="spec-grid">
@@ -989,14 +698,10 @@
               <div class="spec"><span>Material</span><strong>303 Stainless Steel</strong></div>
             </div>
           </div>
-
-          <p class="note">
-            All putters are plated in house with a variety of different options including Nickel and Gold. All putters are also mounted with a Swing Science shaft. Custom shaft lengths and grips are available upon request.
-          </p>
-
+          <p class="note">All putters are plated in house with Nickel and Gold options and mounted with Swing Science shafts.</p>
           <div class="actions">
             <a class="btn primary" href="#contact">Request Brickyard</a>
-            <a class="btn secondary" href="#models">Back to Models</a>
+            <a class="btn secondary" href="#models">Back To Models</a>
           </div>
         </div>
       </div>
@@ -1008,17 +713,10 @@
           <img src="IMG_6539.jpeg" alt="Nasty rear cavity view" />
           <img src="IMG_3101.jpeg" alt="Nasty face milling view" />
         </div>
-
         <div class="detail-panel">
           <div class="sub">New Model</div>
           <h3>Nasty</h3>
-          <p>
-            Nasty brings a bold, clean shape to the lineup with a wide profile and a deep milled look. It is designed to inspire confidence at address while keeping the same DI Golf focus on craftsmanship and performance.
-          </p>
-          <p>
-            Like the rest of the lineup, Nasty is built with premium attention to detail and finished in house.
-          </p>
-
+          <p>Nasty brings a bold, clean shape to the lineup with a wide profile and a deep milled look.</p>
           <div class="spec-box">
             <h4>Specifications</h4>
             <div class="spec-grid">
@@ -1028,56 +726,124 @@
               <div class="spec"><span>Material</span><strong>303 Stainless Steel</strong></div>
             </div>
           </div>
-
-          <p class="note">
-            All putters are plated in house with a variety of different options including Nickel and Gold. All putters are also mounted with a Swing Science shaft. Custom shaft lengths and grips are available upon request.
-          </p>
-
+          <p class="note">All putters are plated in house with Nickel and Gold options and mounted with Swing Science shafts.</p>
           <div class="actions">
             <a class="btn primary" href="#contact">Request Nasty</a>
-            <a class="btn secondary" href="#models">Back to Models</a>
+            <a class="btn secondary" href="#models">Back To Models</a>
           </div>
         </div>
       </div>
     </section>
 
-        <section id="gold-plating" class="section">
+    <section id="ball-markers" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Custom Ball Markers</h2>
+          <p>Custom milled ball markers for tournaments, brands, businesses, teams, and personal use.</p>
+        </div>
+        <div class="product-layout">
+          <div class="gallery">
+            <img src="IMG_4770.jpeg" alt="DI Golf custom ball markers" />
+            <img src="IMG_4495.jpeg" alt="Custom ball marker set" />
+            <img src="IMG_4658.jpeg" alt="Ball marker display tray" />
+          </div>
+          <div class="detail-panel">
+            <div class="sub">Custom Shop</div>
+            <h3>Ball Markers</h3>
+            <p>Whether you want a personal marker, club logo, tournament giveaway, QR code marker, or promotional design, we can help bring your idea to life.</p>
+            <div class="price">Starting at $15 / pc</div>
+            <div class="spec-box">
+              <h4>Bulk Pricing</h4>
+              <div class="spec-grid">
+                <div class="spec"><span>1–25 Markers</span><strong>$15 / pc</strong></div>
+                <div class="spec"><span>25–50 Markers</span><strong>$10 / pc</strong></div>
+                <div class="spec"><span>50+ Markers</span><strong>$7 / pc</strong></div>
+                <div class="spec"><span>100+ Markers</span><strong>$5 / pc</strong></div>
+              </div>
+            </div>
+            <div class="spec-box">
+              <h4>Customization Options</h4>
+              <div class="spec-grid">
+                <div class="spec"><span>Logos</span><strong>Custom Artwork</strong></div>
+                <div class="spec"><span>Finish</span><strong>Nickel / Gold / Raw</strong></div>
+                <div class="spec"><span>Events</span><strong>Tournaments</strong></div>
+                <div class="spec"><span>Artwork</span><strong>Upload Your Logo</strong></div>
+                <div class="spec"><span>Special</span><strong>QR Codes</strong></div>
+                <div class="spec"><span>Business</span><strong>Brand Promotion</strong></div>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="mailto:ousleyjamison@yahoo.com?subject=DI%20Golf%20Ball%20Marker%20Quote">Request Quote</a>
+              <a class="btn secondary" href="https://www.instagram.com/di.golf2024/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="restoration" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Restoration</h2>
+          <p>Bring putters and clubs back to life with refinishing, re-plating, cleanup, face restoration, and updated components.</p>
+        </div>
+        <div class="gallery" style="margin-bottom:28px; max-width:900px;">
+          <div class="before-after">
+            <img src="IMG_0215.JPG" alt="Golf club restoration before and after" />
+            <div class="ba-labels">
+              <span class="ba-label">Before</span>
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-overview">
+          <article class="product-card"><div class="content"><h3>Refinishing</h3><div class="price">Starting at $85</div><p>Clean up wear and restore a fresh premium look.</p></div></article>
+          <article class="product-card"><div class="content"><h3>Re-Plating</h3><div class="price">Starting at $110</div><p>Revive the head and create a more custom final look.</p></div></article>
+          <article class="product-card"><div class="content"><h3>Re-Grip & Assembly</h3><div class="price">Starting at $35</div><p>Update grips, shaft setup, and final build details.</p></div></article>
+          <article class="product-card"><div class="content"><h3>Face Cleanup & Polish</h3><div class="price">Starting at $60</div><p>Refresh the look of heavily used clubs.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gold-plating" class="section">
       <div class="container">
         <div class="section-title">
           <h2>Gold Plating</h2>
           <p>Premium in-house gold plating for putters. Clean finish, premium look, and a strong custom option for gamers and collectors.</p>
         </div>
-
-        <div class="section-title">
-      <h2>Gold Plating</h2>
-      <p>Premium in-house gold plating for putters. $250 per putter.</p>
-    </div>
-
-    <div class="gold-gallery">
-      <img src="IMG_0293.JPG" alt="Gold plated putter 1" onclick="openLightbox(this.src)">
-      <img src="IMG_0295.JPG" alt="Gold plated putter 2" onclick="openLightbox(this.src)">
-      <img src="IMG_0296.JPG" alt="Gold plated putter 3" onclick="openLightbox(this.src)">
-      <img src="IMG_0297.JPG" alt="Gold plated putter 4" onclick="openLightbox(this.src)">
-      <img src="IMG_0298.JPG" alt="Gold plated putter 5" onclick="openLightbox(this.src)">
-      <img src="IMG_0299.JPG" alt="Gold plated putter 6" onclick="openLightbox(this.src)">
-      <img src="IMG_0300.JPG" alt="Gold plated putter 7" onclick="openLightbox(this.src)">
-      <img src="IMG_0301.JPG" alt="Gold plated putter 8" onclick="openLightbox(this.src)">
-    </div>
-  </div>
-</section>
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="Expanded gold plated putter">
-</div>
-
-        <div class="gold-plating-box">
-          <h3>Gold Plating Service – $250</h3>
-          <p>$250 per putter. Includes prep, plating, and finishing for a premium custom look.</p>
-          <p>Perfect for refinishing a gamer, collector piece, or custom project.</p>
+        <div class="gold-gallery">
+          <img src="IMG_0293.JPG" alt="Gold plated putter 1" onclick="openLightbox(this.src)" />
+          <img src="IMG_0295.jpg" alt="Gold plated putter 2" onclick="openLightbox(this.src)" />
+          <img src="IMG_0296.JPG" alt="Gold plated putter 3" onclick="openLightbox(this.src)" />
+          <img src="IMG_0297.JPG" alt="Gold plated putter 4" onclick="openLightbox(this.src)" />
+          <img src="IMG_0298.JPG" alt="Gold plated putter 5" onclick="openLightbox(this.src)" />
+          <img src="IMG_0299.JPG" alt="Gold plated putter 6" onclick="openLightbox(this.src)" />
+          <img src="IMG_0300.JPG" alt="Gold plated putter 7" onclick="openLightbox(this.src)" />
+          <img src="IMG_0301.JPG" alt="Gold plated putter 8" onclick="openLightbox(this.src)" />
+        </div>
+        <div class="spec-box">
+          <h4>Gold Plating Service</h4>
+          <div class="price">$250 Per Putter</div>
+          <p class="note">Includes prep, plating, and finishing for a premium custom look.</p>
           <div class="actions">
             <a class="btn primary" href="mailto:ousleyjamison@yahoo.com?subject=Gold%20Plating%20Inquiry">Request Gold Plating</a>
             <a class="btn secondary" href="#contact">Ask About Custom Work</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="college-discount" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>College Golf School Discount</h2>
+          <p>Special pricing for college golf programs, school teams, coaches, and team orders.</p>
+        </div>
+        <div class="product-overview">
+          <article class="product-card"><div class="content"><h3>Team Orders</h3><p>Discounted pricing is available for college golf teams ordering custom ball markers, gifts, and bulk items.</p></div></article>
+          <article class="product-card"><div class="content"><h3>Custom School Branding</h3><p>Add school logos, team names, event details, and custom artwork.</p></div></article>
+          <article class="product-card"><div class="content"><h3>Tournaments & Fundraisers</h3><p>Perfect for invitationals, alumni outings, team fundraising events, and school giveaways.</p></div></article>
+          <article class="product-card"><div class="content"><h3>Request Team Pricing</h3><p>Email DI Golf for school pricing and team discounts.</p><a class="btn primary" href="mailto:ousleyjamison@yahoo.com?subject=College%20Golf%20School%20Discount">Request School Discount</a></div></article>
         </div>
       </div>
     </section>
@@ -1089,113 +855,20 @@
           <p>Follow DI Golf on Instagram at @di.golf2024 for product drops, finishes, restoration work, and custom builds.</p>
         </div>
         <div class="ig-grid">
-          <article class="ig-card">
-            <img src="IMG_3430.jpeg" alt="DI Golf Eagle gallery" />
-            <div class="content"><strong>The Eagle</strong><br><span class="note">Blade style craftsmanship.</span></div>
-          </article>
-          <article class="ig-card">
-            <img src="IMG_4770.jpeg" alt="DI Golf ball markers gallery" />
-            <div class="content"><strong>Custom Ball Markers</strong><br><span class="note">Logos, QR codes, and event designs.</span></div>
-          </article>
-          <article class="ig-card">
-            <img src="IMG_0215.JPG" alt="DI Golf restoration gallery" />
-            <div class="content"><strong>Restoration Work</strong><br><span class="note">Before and after refinishing.</span></div>
-          </article>
-          <article class="ig-card">
-            <img src="IMG_5931.jpeg" alt="DI Golf finish gallery" />
-            <div class="content"><strong>Premium Finishes</strong><br><span class="note">Nickel and Gold plated options.</span></div>
-          </article>
+          <article class="ig-card"><img src="IMG_3430.jpeg" alt="DI Golf Eagle gallery" /><div class="content"><strong>The Eagle</strong><br><span class="note">Blade style craftsmanship.</span></div></article>
+          <article class="ig-card"><img src="IMG_4770.jpeg" alt="DI Golf ball markers gallery" /><div class="content"><strong>Custom Ball Markers</strong><br><span class="note">Logos, QR codes, and event designs.</span></div></article>
+          <article class="ig-card"><img src="IMG_0215.JPG" alt="DI Golf restoration gallery" /><div class="content"><strong>Restoration Work</strong><br><span class="note">Before and after refinishing.</span></div></article>
+          <article class="ig-card"><img src="IMG_5931.jpeg" alt="DI Golf finish gallery" /><div class="content"><strong>Premium Finishes</strong><br><span class="note">Nickel and Gold plated options.</span></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Built For Your Setup</h2>
-          <p>Select your preferred finish, shaft length, and grip style. Every DI Golf build can be tailored to your preferences before final assembly.
-        </div>
-
-        <div class="product-overview">
-          <article class="product-card">
-            <div class="content">
-              <h3>Standard Build</h3>
-              <p>A clean production build with your preferred model, standard plating, Swing Science shaft, and grip setup.</p>
-              <div class="tag-row">
-                <span class="tag">Nickel Finish</span>
-                <span class="tag">33-35 Inches</span>
-                <span class="tag">Custom Grip</span>
-              </div>
-              <a class="btn primary" href="#contact">Order Standard</a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="content">
-              <h3>Custom Build</h3>
-              <p>Request a more personalized setup with premium finish options, custom length, and a build tailored to your preference.</p>
-              <div class="tag-row">
-                <span class="tag">Gold Option</span>
-                <span class="tag">Built In House</span>
-                <span class="tag">By Request</span>
-              </div>
-              <a class="btn secondary" href="#contact">Request Custom</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-        <section id="college-discount" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>College Golf School Discount</h2>
-          <p>DI Golf offers special pricing for college golf programs, school teams, and team orders. This is a great option for coaches, programs, and players looking for custom ball markers, team gifts, tournament items, and other branded golf pieces.</p>
-        </div>
-
-        <div class="product-overview">
-          <article class="product-card">
-            <div class="content">
-              <h3>Team Orders</h3>
-              <p>Discounted pricing is available for college golf teams ordering custom ball markers, team gifts, and bulk items.</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="content">
-              <h3>Custom School Branding</h3>
-              <p>Add school logos, team names, event details, and custom artwork for a clean team look.</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="content">
-              <h3>Tournament & Fundraiser Items</h3>
-              <p>Perfect for invitationals, alumni outings, team fundraising events, and school giveaways.</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="content">
-              <h3>Request Team Pricing</h3>
-              <p>Email DI Golf for school pricing, team discounts, and custom order details for your program.</p>
-              <div class="actions">
-                <a class="btn primary" href="mailto:jstocks@emiplating.com?subject=College%20Golf%20School%20Discount">Request School Discount</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container cta-box" id="contact">
+    <section class="cta" id="contact">
+      <div class="container cta-box">
         <div>
           <h2>Start Your Custom Build</h2>
-          <p>
-            In-house plating options include Nickel and Gold. Custom shaft lengths in any requested size and grip options are available for all DI Golf models.
-          </p>
-          <div class="spec-box" style="margin-top:20px;">
+          <p>Custom shaft lengths in any requested size, grip options, lie angle, loft, Nickel, Gold, and other custom work are available.</p>
+          <div class="spec-box">
             <h4>Available Options</h4>
             <div class="spec-grid">
               <div class="spec"><span>Finish</span><strong>Nickel / Gold</strong></div>
@@ -1206,22 +879,9 @@
               <div class="spec"><span>Loft</span><strong>Custom Available</strong></div>
             </div>
           </div>
-
-          <div class="spec-box">
-            <h4>Build Your Putter</h4>
-            <div class="spec-grid">
-              <div class="spec"><span>Choose Model</span><strong>Eagle / Mid-Mallet / Brickyard / Nasty</strong></div>
-              <div class="spec"><span>Finish</span><strong>Nickel / Gold</strong></div>
-              <div class="spec"><span>Length</span><strong>Any Requested Size</strong></div>
-              <div class="spec"><span>Grip</span><strong>Standard / Custom</strong></div>
-              <div class="spec"><span>Lie Angle</span><strong>Built To Fit</strong></div>
-              <div class="spec"><span>Loft</span><strong>Built To Fit</strong></div>
-            </div>
-            <p class="note" style="margin-top:16px;">Email DI Golf with your preferred model, finish, shaft length, grip, lie angle, and loft to start a custom build.</p>
-          </div>
         </div>
         <div class="actions">
-          <a class="btn primary" href="mailto:jstocks@emiplating.com?subject=DI%20Golf%20Order%20Inquiry">Email To Order</a>
+          <a class="btn primary" href="mailto:ousleyjamison@yahoo.com?subject=DI%20Golf%20Order%20Inquiry">Email To Order</a>
           <a class="btn secondary" href="https://www.instagram.com/di.golf2024/" target="_blank" rel="noopener noreferrer">@di.golf2024</a>
         </div>
       </div>
@@ -1229,17 +889,46 @@
   </main>
 
   <footer>
-    <div class="container">© 2026 DI Golf • Precision Milled. Player Tested.</div>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-title">DI Golf</h3>
+        <p class="note">Premium putters, custom ball markers, restoration work, gold plating, and branded golf pieces built in Evansville, Indiana.</p>
+      </div>
+      <div>
+        <h3 class="footer-title">Site</h3>
+        <div class="footer-links">
+          <a href="#models">Models</a>
+          <a href="#ball-markers">Ball Markers</a>
+          <a href="#restoration">Restoration</a>
+          <a href="#gold-plating">Gold Plating</a>
+          <a href="#college-discount">College Discount</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Connect</h3>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/di.golf2024/" target="_blank" rel="noopener noreferrer">@di.golf2024</a>
+          <a href="mailto:ousleyjamison@yahoo.com">ousleyjamison@yahoo.com</a>
+          <span class="note">Evansville, Indiana</span>
+        </div>
+      </div>
+    </div>
   </footer>
-<script>
-  function openLightbox(src) {
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').classList.add('show');
-  }
 
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('show');
-  }
-</script>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded gold plated putter" />
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('show');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('show');
+    }
+  </script>
 </body>
 </html>
